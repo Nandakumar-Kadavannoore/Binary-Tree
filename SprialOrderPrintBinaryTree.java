@@ -6,7 +6,7 @@ import java.util.Stack;
  * 
  * @author Nandakumar_K
  *
- * Implementation of Binary Tree using Generic
+ * Implementation of Binary Tree with spiral order printing
  */
 
 /*
@@ -62,8 +62,8 @@ public class MainClass {
 				currentNode = stackOne.pop();
 				if (currentNode.right != null)
 					stackTwo.push(currentNode.right); // Store current node's
-														//right node into
-														// stack two
+									  //right node into
+									  // stack two
 				if (currentNode.left != null)
 					stackTwo.push(currentNode.left); // Store in stack two
 			}
@@ -74,11 +74,11 @@ public class MainClass {
 				currentNode = stackTwo.pop();
 				if (currentNode.right != null)
 					stackOne.push(currentNode.right); // Store current node's
-														// right node into stack
-														// one
+									  // right node into stack
+									  // one
 				if (currentNode.left != null)
 					stackOne.push(currentNode.left); // Store left node into
-														// stack one
+									// stack one
 			}
 		}
 	}
